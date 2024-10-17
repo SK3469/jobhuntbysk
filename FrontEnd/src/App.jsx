@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
 import { Route, Routes,BrowserRouter, RouterProvider } from 'react-router-dom';
-import Login from './components/auth/login';
+import login from './components/auth/Login';
 import Signup from './components/auth/signup';
 import Home from './components/Home';
 import Jobs from './components/jobs';
@@ -25,7 +25,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/description/:id" element={<JobDescription/>} />
