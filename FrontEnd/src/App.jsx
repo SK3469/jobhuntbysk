@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
-import { Route, Routes,BrowserRouter, RouterProvider } from 'react-router-dom';
-import login from './components/auth/Login';
-import signup from './components/auth/signup';
+import { Route, Routes,BrowserRouter } from 'react-router-dom';
+import Login from '../components/auth/Login';
+import Signup from '../components/auth/signup';
 import Home from './components/Home';
 import Jobs from './components/jobs';
 import Browse from './components/Browse';
@@ -25,8 +25,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path="/login" element={<login />} />
-        <Route path="/signup" element={<signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/description/:id" element={<JobDescription/>} />
         <Route path="/browse" element={<Browse />} />
