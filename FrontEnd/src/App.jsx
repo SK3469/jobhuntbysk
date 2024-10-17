@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
 import { Route, Routes,BrowserRouter, RouterProvider } from 'react-router-dom';
-import login from './components/auth/login';
+import login from './components/auth/Login';
 import signup from './components/auth/signup';
 import Home from './components/Home';
 import Jobs from './components/jobs';

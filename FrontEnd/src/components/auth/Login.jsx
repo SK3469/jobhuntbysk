@@ -11,7 +11,7 @@ import { setLoading, setUser } from '@/redux/authSlice';
 import { Loader2 } from 'lucide-react';
 import axios from 'axios';
 
-const login = () => {
+const Login = () => {
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -115,7 +115,7 @@ const login = () => {
           </Button>
         ) : (
           <Button type="submit" className="w-full font-bold my-4">
-            login
+            Login
           </Button>
         )}
         <span className="text-sm">
@@ -126,4 +126,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
